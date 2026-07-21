@@ -13,16 +13,16 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const FILE_PATH = process.env.FILE_PATH || '.tmp';   // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'spn';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
-const UUID = process.env.UUID || '6a0c0baf-8f70-4ec5-a179-d6a572b25f20'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || 'ad3c64b4-7f2d-4595-ad15-c2448780618b'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nznz.sss.xx.kg:443';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || 'XTXYqxCUxIxcgN1fK9hR2ilwt2NVK8yJ';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'buildfyio-sg.ocd.pp.ua';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZDI0MTJiZTlmYjk1NTBkM2YzM2U3Njk2M2MzNGY4YWUiLCJ0IjoiZTJiOWRiMzQtZjdlNC00ZmE1LWI3YjYtZjUxYzA0ZDIzNTNiIiwicyI6IlpUUm1abUV6WmpZdE5UTXdNQzAwTnpFNExXRXdNakF0T0dWallXUTVZVGszTlRRMiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZDI0MTJiZTlmYjk1NTBkM2YzM2U3Njk2M2MzNGY4YWUiLCJ0IjoiYTk0MDc2MmQtYTU4MC00NDQ2LTgwY2EtNDczZjFmNWQ3MmZlIiwicyI6IlpURTJORFF3WTJFdE5EaGtOeTAwWlRaa0xUazVZMkV0WXpreU1XTmxZV016T0dJMyJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
 const ARGO_PORT = process.env.ARGO_PORT || 9123;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'saas.sin.fan';            // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'Buildfyio-SG';                        // 节点名称
+const NAME = process.env.NAME || 'Buildfyio-DE';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
